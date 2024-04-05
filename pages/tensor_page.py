@@ -12,6 +12,7 @@ class TensorPage(BasePage):
     def open(self):
         self.browser.get('https://tensor.ru/')
 
+    @property
     def block(self):
         return self.find(block_selector)
 
@@ -22,5 +23,6 @@ class TensorPage(BasePage):
     def click_about_people(self):
         self.browser.execute_script('arguments[0].click()', self.about_people)
 
+    @property
     def get_url(self):
         return self.browser.current_url
