@@ -1,4 +1,4 @@
-from pages.base_page import BasePage
+from pages.base import BasePage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -14,8 +14,8 @@ class AboutPage(BasePage):
         self.browser.get('https://tensor.ru/about')
 
     def scroll_to(self):
-        bottom_element = self.find(selector_to_scroll)
-        bottom_element.location_once_scrolled_into_view
+        element = self.find(selector_to_scroll)
+        element.location_once_scrolled_into_view
 
     def check_size_images(self, ):
         images = self.wait().until(EC.presence_of_all_elements_located(section_selector))

@@ -1,4 +1,4 @@
-from pages.base_page import BasePage
+from pages.base import BasePage
 from selenium.webdriver.common.by import By
 
 block_selector = (By.XPATH, '//p[contains(text(), "Сила в людях")]')

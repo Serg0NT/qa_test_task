@@ -17,4 +17,3 @@ def test_change_region(browser):
     sbis.click_expected_region()
     assert sbis.check_expected_url_and_title() and sbis.check_expected_region() \
            and old_list_partners is not sbis.get_list_partners()
-
