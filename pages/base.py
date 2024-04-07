@@ -7,9 +7,6 @@ class BasePage:
 
     def find(self, args):
         return self.browser.find_element(*args)
-    #
-    # def get_url(self):
-    #     return self.browser.current_url
 
     def wait(self):
         return WebDriverWait(self.browser, 10, 1)

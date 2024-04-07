@@ -2,7 +2,8 @@ from pages.base import BasePage
 from selenium.webdriver.common.by import By
 
 block_selector = (By.XPATH, '//p[contains(text(), "Сила в людях")]')
-about_people_selector = (By.XPATH, '//*[@id="container"]/div[1]/div/div[5]/div/div/div[1]/div/p[4]/a')
+about_people_selector = (
+By.XPATH, '//*[@id="container"]/div[1]/div/div[5]/div/div/div[1]/div/p[4]/a')
 
 
 class TensorPage(BasePage):
